@@ -8,6 +8,10 @@ Version: 1.1
 Author URI: http://www.lukerollans.me
 */
 
+// Ensure WordPress has been bootstrapped
+if( !defined( 'ABSPATH' ) )
+	exit;
+	
 function modify_wp_search_where( $where ) {
 	
 	if( is_search() ) {
