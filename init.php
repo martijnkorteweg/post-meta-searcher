@@ -4,10 +4,14 @@ Plugin Name: Post Meta Searcher
 Plugin URI: http://www.plugify.com.au/plugin/post-meta-searcher
 Description: When activated, forces any WordPress Search Query to query against post meta data as part of the search criteria.
 Author: Luke Rollans
-Version: 1.0
+Version: 1.1
 Author URI: http://www.lukerollans.me
 */
 
+// Ensure WordPress has been bootstrapped
+if( !defined( 'ABSPATH' ) )
+	exit;
+	
 function modify_wp_search_where( $where ) {
 	
 	if( is_search() ) {
