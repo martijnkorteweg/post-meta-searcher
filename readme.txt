@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello
 Tags: search,meta search,advanced search
 Requires at least: 2.5
 Tested up to: 3.6
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ At this moment, no. This will be a feature implemented in 1.1
 1. Plugin does not have any screenshot references. Simply activate and it will work in the background!
 
 == Changelog ==
+
+= 1.1 =
+* Small security update
 
 = 1.0 =
 * Initial release of plugin
