@@ -19,7 +19,7 @@ function modify_wp_search_where( $where ) {
 		global $wpdb, $wp;
 		
 		$where = preg_replace(
-			"/(wp_posts.post_title (LIKE '%{$wp->query_vars['s']}%'))/i",
+			"/($wpdb->posts.post_title (LIKE '%{$wp->query_vars['s']}%'))/i",
 			"$0 OR ( $wpdb->postmeta.meta_value LIKE '%{$wp->query_vars['s']}%' )",
 			$where
 			);
