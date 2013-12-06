@@ -3,8 +3,8 @@ Contributors: hello@lukerollans.me
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello%40lukerollans%2eme&lc=GB&item_name=Plugin%20Development%20Donation&currency_code=USD
 Tags: search,meta search,advanced search,custom search,custom field search
 Requires at least: 2.5
-Tested up to: 3.6
-Stable tag: 1.1
+Tested up to: 3.7.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ At this moment, no. This will be a feature implemented in 1.1
 1. Plugin does not have any screenshot references. Simply activate and it will work in the background!
 
 == Changelog ==
+
+= 1.2 =
+* Fixed bug causing non default prefixed posts table to be queried incorrectly
 
 = 1.1 =
 * Small security update
