@@ -37,7 +37,9 @@ function modify_wp_search_join( $join ) {
 
 	global $wpdb;
 	
-	return $join .= " LEFT JOIN $wpdb->postmeta ON ($wpdb->posts.ID = $wpdb->postmeta.post_id) ";
+	if (!strpos($join, $wpdb->postmeta)) $join .= " LEFT JOIN $wpdb->postmeta ON ($wpdb->posts.ID = $wpdb->postmeta.post_id) ";
+
+	return $join;
 	
 }
 
