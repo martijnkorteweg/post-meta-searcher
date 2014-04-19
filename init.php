@@ -37,7 +37,7 @@ function modify_wp_search_join( $join ) {
 
 	global $wpdb;
 	
-	return $join .= " LEFT JOIN $wpdb->postmeta ON ($wpdb->posts.ID = $wpdb->postmeta.post_id) ";
+	return $join .= " LEFT JOIN $wpdb->postmeta as pmeta_table ON ($wpdb->posts.ID = pmeta_table.post_id) ";
 	
 }
 
